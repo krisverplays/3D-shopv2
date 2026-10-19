@@ -1,0 +1,25 @@
+name: FloatingDisplayShops
+version: '2.0.0'
+main: com.floatingmarket.FloatingDisplayShops
+api-version: '1.21'
+softdepend: [GriefPrevention, Vault]
+authors: [FloatingMarket]
+description: 3D Floating Display Shops for Java and Bedrock (Geyser Fix)
+
+commands:
+  shop:
+    description: Create or remove 3D Floating Player Shops
+    usage: /shop help
+  shopadmin:
+    description: Admin commands for unlimited shops and removal
+    permission: displayshop.admin
+    usage: /shopadmin help
+
+permissions:
+  displayshop.use:
+    description: Allows players to create and use 3D shops
+    default: true
+  displayshop.admin:
+    description: Allows admins to create unlimited shops and force remove shops
+    default: op
+    
